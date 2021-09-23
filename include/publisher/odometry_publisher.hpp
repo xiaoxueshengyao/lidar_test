@@ -11,7 +11,7 @@
 #include <string>
 
 
-namespace lidar_project{
+namespace lidar_test{
 
 //里程计发布
 class OdometryPublisher{

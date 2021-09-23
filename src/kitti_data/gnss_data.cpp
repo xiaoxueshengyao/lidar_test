@@ -12,11 +12,11 @@
 
 
 //类的静态成员在类外初始化
-bool lidar_project::GNSSData::origin_pose_inited = false;
+bool lidar_test::GNSSData::origin_pose_inited = false;
 //坐标转化，经纬度转换为xyz
-GeographicLib::LocalCartesian lidar_project::GNSSData::geo_converter;
+GeographicLib::LocalCartesian lidar_test::GNSSData::geo_converter;
 
-namespace lidar_project{
+namespace lidar_test{
 
 void GNSSData::InitOriginPose(){
     geo_converter.Reset(latitude,longitude,altitude);

@@ -7,7 +7,7 @@
 #include "geometry_msgs/TwistStamped.h"
 #include "kitti_data/velocity_data.hpp"
 
-namespace lidar_project{
+namespace lidar_test{
 
 class VelocitySubscriber{
   public:

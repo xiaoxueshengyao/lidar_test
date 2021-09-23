@@ -1,7 +1,7 @@
 #include "subscriber/imu_subscriber.hpp"
 
 
-namespace lidar_project{
+namespace lidar_test{
 
 IMUSubscriber::IMUSubscriber(ros::NodeHandle& nh,std::string topic_name, size_t buff_size)
     :nh_(nh){

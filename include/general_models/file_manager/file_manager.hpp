@@ -13,7 +13,7 @@
 #include <fstream>
 
 
-namespace lidar_project{
+namespace lidar_test{
 
 class FileManager
 {

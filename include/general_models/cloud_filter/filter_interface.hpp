@@ -9,7 +9,7 @@
 
 #include "kitti_data/cloud_data.hpp"
 #include <yaml-cpp/yaml.h>//yaml文件读参数，放在外面方便改写
-namespace lidar_project{
+namespace lidar_test{
 class CloudFilterInterface{
     public:
       virtual ~CloudFilterInterface() = default;

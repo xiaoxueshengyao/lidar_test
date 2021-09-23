@@ -10,7 +10,7 @@
 #include <Eigen/Dense>
 #include <eigen3/Eigen/StdDeque>
 
-namespace lidar_project{
+namespace lidar_test{
 //速度（线、角）数据
 class VelocityData{
   

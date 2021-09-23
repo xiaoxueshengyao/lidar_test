@@ -1,6 +1,6 @@
 #include "general_models/registration/ndt_registration.hpp"
 
-namespace lidar_project{
+namespace lidar_test{
 
 NDTRegistration::NDTRegistration(const YAML::Node& node)
     :ndt_ptr_(new pcl::NormalDistributionsTransform<CloudData::PointT,CloudData::PointT>()){

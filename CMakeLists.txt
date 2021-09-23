@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8)
-project(lidar_project)
+project(lidar_test)
 
 set(CMAKE_BUILD_TYPE "Debug")
 set(CMAKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O3 -Wall")
@@ -33,7 +33,7 @@ generate_messages(
 set(ALL_TARGET_LIBRARIES "")#建立一个变量，把需要的库都放一起
 
 #PCL库
-find_package(PCL REQUIRED)
+find_package(PCL 1.7 REQUIRED)
 message("PCL version  is ： ${PCL_VERSION}")
 list(REMOVE_ITEM PCL_LIBRARIES "vtkproj4")
 include_directories(${PCL_INCLUDE_DIRS})
@@ -103,28 +103,28 @@ list(REMOVE_ITEM ALL_SRCS ${APP_SRCS})
 #target_link_libraries(front_end_node ${catkin_LIBRARIES} ${YAML_CPP_LIBRARIES} ${PCL_LIBRARIES} ${Eigen_LIBRARIES} ${GeographicLib_LIBRARIES} glog::glog )
 
 #测试数据
-add_executable(test_frame_node app/test_frame.cpp ${ALL_SRCS})
-target_link_libraries(test_frame_node ${catkin_LIBRARIES} ${ALL_TARGET_LIBRARIES} glog)
+#add_executable(test_frame_node app/test_frame.cpp ${ALL_SRCS})
+#target_link_libraries(test_frame_node ${catkin_LIBRARIES} ${ALL_TARGET_LIBRARIES} glog)
 
-#数据预处理节点
-add_executable(data_pretreat_node app/data_pretreat_node.cpp ${ALL_SRCS})
-add_dependencies(data_pretreat_node ${catkin_EXPORTED_TARGETS})
- #在使用ROS的message、service、action时注意添加 add_dependencies
- #添加对其它package消息的依赖，前提是已经通过find_package()引入了这个package
- target_link_libraries(data_pretreat_node ${catkin_LIBRARIES} ${ALL_TARGET_LIBRARIES} glog)
+# #数据预处理节点
+# add_executable(data_pretreat_node app/data_pretreat_node.cpp ${ALL_SRCS})
+# add_dependencies(data_pretreat_node ${catkin_EXPORTED_TARGETS})
+#  #在使用ROS的message、service、action时注意添加 add_dependencies
+#  #添加对其它package消息的依赖，前提是已经通过find_package()引入了这个package
+#  target_link_libraries(data_pretreat_node ${catkin_LIBRARIES} ${ALL_TARGET_LIBRARIES} glog)
 
  #前端节点
  add_executable(front_end_node app/front_end_node.cpp ${ALL_SRCS})
- add_dependencies(front_end_node ${catkin_EXPORTED_TARGETS})
+ add_dependencies(front_end_node ${catkin_EXPORTED_TARGETS}  ${PROJECT_NAME}_gencpp)
  target_link_libraries(front_end_node ${catkin_LIBRARIES} ${ALL_TARGET_LIBRARIES} glog)
 
- #后端节点
- add_executable(back_end_node app/back_end_node.cpp ${ALL_SRCS})
- add_dependencies(back_end_node ${catkin_EXPORTED_TARGETS})
- target_link_libraries(back_end_node ${catkin_LIBRARIES} ${ALL_TARGET_LIBRARIES} glog)
+#  #后端节点
+#  add_executable(back_end_node app/back_end_node.cpp ${ALL_SRCS})
+#  add_dependencies(back_end_node ${catkin_EXPORTED_TARGETS})
+#  target_link_libraries(back_end_node ${catkin_LIBRARIES} ${ALL_TARGET_LIBRARIES} glog)
 
-#可视化节点
-add_executable(viewer_node app/viewer_node.cpp ${ALL_SRCS})
-add_dependencies(viewer_node ${catkin_EXPORTED_TARGETS})
-target_link_libraries(viewer_node ${catkin_LIBRARIES} ${ALL_TARGET_LIBRARIES} glog)
+# #可视化节点
+# add_executable(viewer_node app/viewer_node.cpp ${ALL_SRCS})
+# add_dependencies(viewer_node ${catkin_EXPORTED_TARGETS})
+# target_link_libraries(viewer_node ${catkin_LIBRARIES} ${ALL_TARGET_LIBRARIES} glog)
 

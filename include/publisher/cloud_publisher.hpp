@@ -12,7 +12,7 @@
 #include "kitti_data/cloud_data.hpp"
 
 
-namespace lidar_project{
+namespace lidar_test{
 
 //点云发布
 class CloudPublisher{

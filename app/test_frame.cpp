@@ -32,7 +32,7 @@
 
 #include "glog/logging.h"
 
-using namespace lidar_project;
+using namespace lidar_test;
 
 std::deque<CloudData> cloud_data_all;
 std::deque<IMUData> imu_data_all;

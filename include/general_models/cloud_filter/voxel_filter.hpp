@@ -10,7 +10,7 @@
 #include "general_models/cloud_filter/filter_interface.hpp"
 #include <pcl/filters/voxel_grid.h>
 
-namespace lidar_project{
+namespace lidar_test{
 class VoxelFilter: public CloudFilterInterface{
     public:
       VoxelFilter(const YAML::Node& node);

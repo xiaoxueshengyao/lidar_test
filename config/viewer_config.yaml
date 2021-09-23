@@ -14,8 +14,8 @@ frame_filter: voxel_filter
 #滤波参数
 voxel_filter: 
   global_map:
-    leaf_size: [0.5,0.5,0.5]
+    leaf_size: [0.5, 0.5, 0.5]
   local_map:
-    leaf_size: [0.5,0.5,0.5]
+    leaf_size: [0.5, 0.5, 0.5]
   frame:
-    leaf_size: [0.5,0.5,0.5]
+    leaf_size: [0.5, 0.5, 0.5]

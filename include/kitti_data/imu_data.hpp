@@ -16,7 +16,7 @@
 #include <cmath>
 #include "Eigen/StdDeque"
 
-namespace lidar_project{
+namespace lidar_test{
 
 class IMUData{
 

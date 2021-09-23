@@ -16,7 +16,7 @@
 #include "kitti_data/velocity_data.hpp"
 #include "kitti_data/cloud_data.hpp"
 
-namespace lidar_project{
+namespace lidar_test{
 class DistortionAdjust{
     public:
         void SetMotionInfo(float scan_period,VelocityData velocity_data);
@@ -33,7 +33,7 @@ class DistortionAdjust{
 
 
 
-}//namespacee lidar_project
+}//namespacee lidar_test
 
 
 

@@ -7,7 +7,7 @@
 #include "general_models/undistorted/undistorted.hpp"
 #include "glog/logging.h"
 
-namespace lidar_project
+namespace lidar_test
 {
 //主要是获得角速度和线速度信息，用于后续转换
 void DistortionAdjust::SetMotionInfo(float scan_period,VelocityData velocity_data){
@@ -78,5 +78,5 @@ Eigen::Matrix3f DistortionAdjust::UpdateMatrix(float real_time){
     return t_V.matrix();
 }
     
-} // namespace lidar_project
+} // namespace lidar_test
 

@@ -1,6 +1,6 @@
 #include "subscriber/cloud_subscriber.hpp"
 
-namespace lidar_project{
+namespace lidar_test{
 
 //Cloud
 CloudSubscriber::CloudSubscriber(ros::NodeHandle& nh,std::string topic_name,size_t buff_size)
@@ -12,7 +12,7 @@ void CloudSubscriber::msg_callback(const sensor_msgs::PointCloud2::ConstPtr& clo
     CloudData cloud_buff;
     cloud_buff.time = cloud_msg_ptr->header.stamp.toSec();
     pcl::fromROSMsg(*cloud_msg_ptr,*(cloud_buff.cloud_ptr));
-    // std::cout<<"Got cloud data!!!!"<<std::endl;
+    std::cout<<"Got cloud data!!!!"<<std::endl;
 
     new_cloud_data_.push_back(cloud_buff);
 }

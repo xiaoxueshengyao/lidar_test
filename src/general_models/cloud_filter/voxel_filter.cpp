@@ -6,7 +6,7 @@
 
 #include "general_models/cloud_filter/voxel_filter.hpp"
 
-namespace lidar_project{
+namespace lidar_test{
 VoxelFilter::VoxelFilter(const YAML::Node& node){
     float leaf_size_x = node["leaf_size"][0].as<float>();
     float leaf_size_y = node["leaf_size"][1].as<float>();

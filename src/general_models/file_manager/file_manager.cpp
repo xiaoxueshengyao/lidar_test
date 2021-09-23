@@ -9,7 +9,7 @@
 #include <boost/filesystem.hpp>
 #include "glog/logging.h"
 
-namespace lidar_project{
+namespace lidar_test{
 //打开文件
 bool FileManager::CreateFile(std::ofstream& ofs, std::string file_path){
     ofs.open(file_path.c_str(),std::ios::app);

@@ -1,6 +1,6 @@
 #include "subscriber/gnss_subscriber.hpp"
 
-namespace lidar_project{
+namespace lidar_test{
 
 //GNSS
 GNSSSubscriber::GNSSSubscriber(ros::NodeHandle& nh,std::string topic_name,size_t buff_size)

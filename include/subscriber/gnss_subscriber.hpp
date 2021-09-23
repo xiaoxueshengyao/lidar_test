@@ -10,7 +10,7 @@
 #include <sensor_msgs/NavSatFix.h>
 #include "kitti_data/gnss_data.hpp"
 
-namespace lidar_project
+namespace lidar_test
 {
 
 //GNSS订阅类
@@ -30,7 +30,7 @@ class GNSSSubscriber{
 
 };
 
-} // namespace lidar_project
+} // namespace lidar_test
 
 #endif
 

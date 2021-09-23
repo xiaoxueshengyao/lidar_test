@@ -6,7 +6,7 @@
 #include "kitti_data/velocity_data.hpp"
 
 
-namespace lidar_project{
+namespace lidar_test{
 //针对线速度和角速度进行同步，做差值运算
 bool VelocityData::SyncData(std::deque<VelocityData>& UnsyncedData,std::deque<VelocityData>& SyncedData,double sync_time){
         //找到与同步时间相邻的两个数据

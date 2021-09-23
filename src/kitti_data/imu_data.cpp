@@ -9,7 +9,7 @@
 #include <cmath>
 #include "glog/logging.h"
 
-namespace lidar_project{
+namespace lidar_test{
 
 Eigen::Matrix3f IMUData::GetRotateMat(){
     Eigen::Quaterniond q(orientation.w,orientation.x,orientation.y,orientation.z);

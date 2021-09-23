@@ -9,7 +9,7 @@ local_frame_num: 20
 local_map_filter: voxel_filter
 
 #rviz
-#display_filter: voxel_filter
+display_filter: voxel_filter
 
 #current frame
 frame_filter: voxel_filter

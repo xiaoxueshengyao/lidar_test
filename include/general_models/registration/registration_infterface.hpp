@@ -11,7 +11,7 @@
 #include <Eigen/Dense>
 #include "kitti_data/cloud_data.hpp"
 
-namespace lidar_project{
+namespace lidar_test{
 class RegistrationInterface{
     public:
       EIGEN_MAKE_ALIGNED_OPERATOR_NEW

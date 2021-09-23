@@ -10,7 +10,7 @@
 #include <deque>
 
 
-namespace lidar_project{
+namespace lidar_test{
 
 class GNSSData{
 

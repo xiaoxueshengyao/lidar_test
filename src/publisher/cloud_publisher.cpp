@@ -1,6 +1,6 @@
 #include "publisher/cloud_publisher.hpp"
 
-namespace lidar_project{
+namespace lidar_test{
 
 //构造函数，发布者话题和size设定
 CloudPublisher::CloudPublisher(ros::NodeHandle& nh, 

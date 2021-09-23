@@ -15,7 +15,7 @@
 #include <deque>
 
 
-namespace lidar_project{
+namespace lidar_test{
 class CloudSubscriber{
   public:
     CloudSubscriber(ros::NodeHandle& nh_,std::string topic_name,size_t buff_size);

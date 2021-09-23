@@ -12,7 +12,7 @@
 #include "kitti_data/imu_data.hpp"
 
 
-namespace lidar_project{
+namespace lidar_test{
 
 class IMUSubscriber{
     public:

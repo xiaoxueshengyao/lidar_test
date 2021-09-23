@@ -1,6 +1,6 @@
 #include "subscriber/velocity_subscriber.hpp"
 
-namespace lidar_project{
+namespace lidar_test{
 VelocitySubscriber::VelocitySubscriber(ros::NodeHandle& nh, std::string topic_name, size_t buff_size)
     :nh_(nh){
     subscriber_ = nh_.subscribe(topic_name,buff_size,&VelocitySubscriber::msg_callback,this);

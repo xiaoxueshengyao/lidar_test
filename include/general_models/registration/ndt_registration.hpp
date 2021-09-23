@@ -12,7 +12,7 @@
 #include <pcl/registration/ndt.h>
 #include "glog/logging.h"
 
-namespace lidar_project{
+namespace lidar_test{
 class NDTRegistration:public RegistrationInterface
 {
     public:

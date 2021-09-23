@@ -1,6 +1,6 @@
 #include "publisher/odometry_publisher.hpp"
 
-namespace lidar_project{
+namespace lidar_test{
 
 OdometryPublisher::OdometryPublisher(ros::NodeHandle& nh, 
                                      std::string topic_name,
